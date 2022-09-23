@@ -41,11 +41,14 @@ main {
     color: white;
     display: grid;
     grid-template-columns: 180px 1fr;
+    border-radius: 15px;
+    box-shadow: inset;
 }
 
 .card img {
     max-width: 150px;
     margin: 10px;
+    border-radius: 10px;
 }
 .searchbar {
     display: flex;
