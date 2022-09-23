@@ -15,9 +15,10 @@ async function findBeanies(name) {
 
     error = response.error;
     beanies = response.data;
+    console.log(response.data);
 }
 
-sForm.addEventListener ('submit', (e) =>{
+sForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const formData = new FormData(sForm);
     findBeanies(formData.get('name'));
@@ -35,4 +36,3 @@ function displayBeanies() {
 }
 
 // (don't forget to call any display functions you want to run on page load!)
-displayBeanies();
